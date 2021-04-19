@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Firebase CRUD Operations</title>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script> 
+        <script src="Curd.js"></script>
+        <style>
+            .form-group
+            {
+                margin-left: 35%;
+                margin-top:  5%;
+            }
+            .form-control
+            {
+                width: 50%;
+            }
+            h2{
+                color: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="form-group">
+                <h2>CRUD OPERATIONS</h2>
+                <input class="form-control" type="text" id="rollno" placeholder="Enter RollNo:">
+                <input class="form-control" type="text" id="name" placeholder="Enter Name"><br>
+                <button class="btn-primary" onclick="insertData()">Insert</button>
+                <button class="btn-danger" onclick="deleteData()">Delete</button>
+                <button class="btn-primary" onclick="updateData()">Update</button>
+                <button class="btn-primary" onclick="readData()">Read</button>
+            </div>
+    </body>
+</html>
